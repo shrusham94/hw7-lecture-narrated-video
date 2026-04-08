@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import json
 import os
+import time
 from pathlib import Path
 from typing import Any
 
@@ -38,12 +40,19 @@ def generate_text(
     system_instruction: str,
     user_parts: list[types.Part],
     temperature: float = 0.4,
+    response_mime_type: str | None = None,
+    max_output_tokens: int | None = None,
 ) -> str:
     c = client()
-    cfg = types.GenerateContentConfig(
-        systemInstruction=system_instruction,
-        temperature=temperature,
-    )
+    cfg_kw: dict[str, Any] = {
+        "systemInstruction": system_instruction,
+        "temperature": temperature,
+    }
+    if response_mime_type:
+        cfg_kw["response_mime_type"] = response_mime_type
+    if max_output_tokens is not None:
+        cfg_kw["max_output_tokens"] = max_output_tokens
+    cfg = types.GenerateContentConfig(**cfg_kw)
     resp = c.models.generate_content(
         model=model_name(),
         contents=[types.Content(role="user", parts=user_parts)],
@@ -61,9 +70,24 @@ def generate_json(
     user_parts: list[types.Part],
     temperature: float = 0.3,
 ) -> dict[str, Any]:
-    sys = system_instruction + "\n\nRespond with a single JSON object only. No markdown fences."
-    raw = generate_text(system_instruction=sys, user_parts=user_parts, temperature=temperature)
-    return extract_json_object(raw)
+    sys = system_instruction + "\n\nRespond with a single JSON object only."
+    last_err: BaseException | None = None
+    for attempt in range(4):
+        try:
+            raw = generate_text(
+                system_instruction=sys,
+                user_parts=user_parts,
+                temperature=temperature,
+                response_mime_type="application/json",
+                max_output_tokens=8192,
+            )
+            return extract_json_object(raw)
+        except (RuntimeError, json.JSONDecodeError, ValueError) as e:
+            last_err = e
+            if attempt < 3:
+                time.sleep(1.5 * (2**attempt))
+                continue
+            raise RuntimeError(f"Lecture agent JSON failed after retries: {e}") from e
 
 
 def part_from_image_path(path: Path) -> types.Part:

@@ -70,18 +70,21 @@ def run_narration_agent(
             f"{premise_txt}\n\n"
             "arc.json:\n"
             f"{arc_txt}\n\n"
-            "slide_description.json (entire document, all slides):\n"
-            f"{slide_desc_raw}\n\n"
-            "Current slide focus (same data as in the document; repeated for clarity):\n"
+            "Current slide focus (from slide_description.json):\n"
             f"{context_pack}\n\n"
             "All prior slide narrations for this run (none before slide 1):\n"
             f"{prior_blob}\n\n"
             f"Now write narration for slide_index={idx} only."
         )
 
+        # Entire slide_description.json in its own part (rubric) and to avoid one huge text blob.
+        deck_part = types.Part.from_text(
+            text="slide_description.json (entire document, all slides):\n" + slide_desc_raw
+        )
+
         data = generate_json(
             system_instruction=BASE_SYSTEM,
-            user_parts=[part_from_image_path(img), types.Part.from_text(text=prompt)],
+            user_parts=[part_from_image_path(img), types.Part.from_text(text=prompt), deck_part],
             temperature=0.55,
         )
         if int(data.get("slide_index", -1)) != idx:
