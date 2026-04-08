@@ -6,7 +6,10 @@ from pathlib import Path
 from typing import Any
 
 import httpx
+from dotenv import load_dotenv
 from tqdm import tqdm
+
+from lecture_agents.paths import REPO_ROOT
 
 
 async def _edge_tts_save(text: str, out_mp3: Path, voice: str) -> None:
@@ -26,6 +29,8 @@ def synthesize_slide_mp3s(
     Write audio/slide_NNN.mp3 for each slide using ElevenLabs if ELEVENLABS_API_KEY is set,
     otherwise Microsoft Edge TTS (no API key).
     """
+    load_dotenv(REPO_ROOT / ".env")
+    load_dotenv()
     audio_dir.mkdir(parents=True, exist_ok=True)
     key = (os.environ.get("ELEVENLABS_API_KEY") or "").strip()
     voice_id = (os.environ.get("ELEVENLABS_VOICE_ID") or "").strip()

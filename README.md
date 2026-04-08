@@ -10,7 +10,7 @@ Python pipeline for the course assignment: read **`lecture_transcript.txt`** to 
 
 ## Environment
 
-Create a **`.env`** file in the **repo root** (never commit it):
+Copy **`.env.example`** to **`.env`** in the **repo root** (or create **`.env`** yourself; never commit it):
 
 | Variable | Required | Notes |
 |----------|----------|--------|
