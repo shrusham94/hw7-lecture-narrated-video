@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "slide_count": 18,
+  "slides": [
+    {
+      "slide_index": 1,
+      "image": "slide_001.png",
+      "title_guess": "AI and Screenplays",
+      "description": "Slide 1 develops the lecture on generative AI and screenwriting, emphasizing \"AI and Screenplays\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: AI and Screenplays",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 2,
+      "image": "slide_002.png",
+      "title_guess": "Roadmap for today",
+      "description": "Slide 2 develops the lecture on generative AI and screenwriting, emphasizing \"Roadmap for today\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Roadmap for today",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 3,
+      "image": "slide_003.png",
+      "title_guess": "Why the screenplay still matters",
+      "description": "Slide 3 develops the lecture on generative AI and screenwriting, emphasizing \"Why the screenplay still matters\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Why the screenplay still matters",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 4,
+      "image": "slide_004.png",
+      "title_guess": "What a screenplay is (and is not)",
+      "description": "Slide 4 develops the lecture on generative AI and screenwriting, emphasizing \"What a screenplay is (and is not)\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: What a screenplay is (and is not)",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 5,
+      "image": "slide_005.png",
+      "title_guess": "Traditional writers-room workflow",
+      "description": "Slide 5 develops the lecture on generative AI and screenwriting, emphasizing \"Traditional writers-room workflow\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Traditional writers-room workflow",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 6,
+      "image": "slide_006.png",
+      "title_guess": "Where generative AI enters",
+      "description": "Slide 6 develops the lecture on generative AI and screenwriting, emphasizing \"Where generative AI enters\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Where generative AI enters",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 7,
+      "image": "slide_007.png",
+      "title_guess": "Large language models in plain terms",
+      "description": "Slide 7 develops the lecture on generative AI and screenwriting, emphasizing \"Large language models in plain terms\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Large language models in plain terms",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 8,
+      "image": "slide_008.png",
+      "title_guess": "Brainstorming and outlining with AI",
+      "description": "Slide 8 develops the lecture on generative AI and screenwriting, emphasizing \"Brainstorming and outlining with AI\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Brainstorming and outlining with AI",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 9,
+      "image": "slide_009.png",
+      "title_guess": "Drafting scenes and dialogue",
+      "description": "Slide 9 develops the lecture on generative AI and screenwriting, emphasizing \"Drafting scenes and dialogue\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Drafting scenes and dialogue",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 10,
+      "image": "slide_010.png",
+      "title_guess": "Continuity, tone, and rewriting",
+      "description": "Slide 10 develops the lecture on generative AI and screenwriting, emphasizing \"Continuity, tone, and rewriting\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Continuity, tone, and rewriting",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 11,
+      "image": "slide_011.png",
+      "title_guess": "Human-in-the-loop editing",
+      "description": "Slide 11 develops the lecture on generative AI and screenwriting, emphasizing \"Human-in-the-loop editing\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Human-in-the-loop editing",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 12,
+      "image": "slide_012.png",
+      "title_guess": "Authorship, credit, and copyright",
+      "description": "Slide 12 develops the lecture on generative AI and screenwriting, emphasizing \"Authorship, credit, and copyright\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Authorship, credit, and copyright",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 13,
+      "image": "slide_013.png",
+      "title_guess": "Guild and industry context",
+      "description": "Slide 13 develops the lecture on generative AI and screenwriting, emphasizing \"Guild and industry context\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Guild and industry context",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 14,
+      "image": "slide_014.png",
+      "title_guess": "Worked example: premise to beat sheet",
+      "description": "Slide 14 develops the lecture on generative AI and screenwriting, emphasizing \"Worked example: premise to beat sheet\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Worked example: premise to beat sheet",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 15,
+      "image": "slide_015.png",
+      "title_guess": "Failure modes: hallucination and cliché",
+      "description": "Slide 15 develops the lecture on generative AI and screenwriting, emphasizing \"Failure modes: hallucination and cliché\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Failure modes: hallucination and cliché",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 16,
+      "image": "slide_016.png",
+      "title_guess": "Authenticity and audience trust",
+      "description": "Slide 16 develops the lecture on generative AI and screenwriting, emphasizing \"Authenticity and audience trust\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Authenticity and audience trust",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 17,
+      "image": "slide_017.png",
+      "title_guess": "Discussion prompts",
+      "description": "Slide 17 develops the lecture on generative AI and screenwriting, emphasizing \"Discussion prompts\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Discussion prompts",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    },
+    {
+      "slide_index": 18,
+      "image": "slide_018.png",
+      "title_guess": "Takeaways and next steps",
+      "description": "Slide 18 develops the lecture on generative AI and screenwriting, emphasizing \"Takeaways and next steps\" and linking to prior material on craft, tools, and ethics.",
+      "key_points": [
+        "Frames section: Takeaways and next steps",
+        "Aligned with Lecture 17 deck themes"
+      ]
+    }
+  ]
+}

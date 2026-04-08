@@ -90,7 +90,7 @@ def main() -> None:
     slide_paths: list[Path] = []
     if "raster" in steps:
         slide_paths = rasterize_pdf_to_pngs(pdf, slide_images_dir)
-        print(f"Rasterized {len(slide_paths)} slides → {slide_images_dir}")
+        print(f"Rasterized {len(slide_paths)} slides -> {slide_images_dir}")
     else:
         slide_paths = sorted(slide_images_dir.glob("slide_*.png"))
 
