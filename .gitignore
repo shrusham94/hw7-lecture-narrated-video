@@ -1,6 +1,11 @@
 # Environment (never commit secrets)
 .env
 
+# Virtual environments
+.venv/
+venv/
+env/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -9,9 +14,14 @@ dist/
 build/
 .eggs/
 
-# Local one-off scripts (e.g. T2 script → scenes import); not part of Awesome-O package
-tools/
-
-# Tools / editor
+# Editor
 .ruff_cache/
 *.sublime-workspace
+
+# Local run logs
+pipeline_run.log
+
+# Lecture pipeline outputs (do not commit large binaries)
+projects/**/slide_images/**
+projects/**/audio/**
+projects/**/*.mp4

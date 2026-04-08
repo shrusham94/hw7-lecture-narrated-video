@@ -1,0 +1,43 @@
+{
+  "tone": "Warm, informal MBA-class energy—half stand-up, half patient explainer. Sounds like he’s talking with friends, not reading a script.",
+  "register": "Casual-professional: Yale SOM classroom voice, direct address, occasional slang ('bro', 'yo'), still keeps technical teaching coherent.",
+  "pacing_notes": "Starts with newsy tangents and audience check-ins, then settles into long explanatory stretches with loops back to intuition. Uses time checks and headcount. Will pause for chat/questions and joke about Zoom/Twitch dynamics.",
+  "fillers_and_discourse_markers": [
+    "uh",
+    "um",
+    "like",
+    "right?",
+    "okay?",
+    "you know?",
+    "so…",
+    "yeah?",
+    "I mean"
+  ],
+  "rhetorical_moves": [
+    "Opens with a vivid anecdote or headline to earn attention, then pivots to ‘here’s why this matters for you.’",
+    "Problem/solution framing: names what chatbots can’t do (context limits, cost, retrieval failures) before introducing the fix (RAG, chunking, vector search).",
+    "Concrete scenarios (admissions office, Harry Potter PDF) to make scale intuitive.",
+    "Repeated ‘isn’t that cool / wouldn’t that be awesome’ hooks to keep momentum.",
+    "Self-aware humor about AI replacing jobs and about his own tooling choices (Cursor, ‘I asked the AI’)."
+  ],
+  "humor_and_asides": "Dry/sarcastic bits, memey mis-pronunciations (e.g., playful re-labeling acronyms), Twitch/streaming metaphors, gentle roasts of deadlines and grading anxiety, PG-13 cringe jokes about tech hype.",
+  "audience_interaction": "Explicitly invites chat participation, reassurances (‘grades don’t matter’), firm deadline reminders, calls for thumbs-up/visual checks, office-hours fallback when demos break.",
+  "emphasis_patterns": "Analogies and contrasts (‘even if you could, it’s still a bad idea’), repeats key terms (‘retrieval augmented generation’), occasional emphatic profanity in transcript that narration should SOFTEN to classroom-safe wording unless you know the deck is private.",
+  "vocabulary_notes": "ML jargon explained in plain language (tokens, embeddings, cosine similarity). Uses brand names (Gemini, MongoDB, Pinecone) as concrete anchors.",
+  "narration_guidance": [
+    "Sound conversational: shorter sentences, occasional hedging, friendly confidence.",
+    "Use light fillers sparingly—enough to echo the instructor without hurting TTS clarity.",
+    "When introducing ideas, say what the pain is first, then the technique name (RAG), then what it buys you.",
+    "Prefer ‘we’ and ‘you’; encourage mental participation (‘think about…’, ‘wouldn’t that be cool?’).",
+    "Keep technical definitions example-driven, not textbook-abstract.",
+    "Title slide: introduce yourself as the instructor, welcome the audience, and preview the arc of the lecture in one tight minute."
+  ],
+  "avoid": [
+    "Overly formal or polished academic diction",
+    "Long lists without narrative glue",
+    "Claims that Zoom chat is visible right now (unless true in context)",
+    "Slurs, targeted insults, or graphic content",
+    "Uncensored profanity for a general academic submission—keep it PG-13"
+  ],
+  "notes": "Generated for HW pipeline: matches the provided auto-generated captions from a live RAG lecture (tangents + chat energy + technical walkthrough)."
+}
