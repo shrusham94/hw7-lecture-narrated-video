@@ -8,6 +8,8 @@ Python pipeline for the course assignment: read **`lecture_transcript.txt`** to 
 - **ffmpeg** on your `PATH`
 - **Google Gemini API** key
 
+Use the **instructor caption/transcript** required by the course (e.g. the linked *Lecture 11 Section 2* captions) as **`lecture_transcript.txt`**, or split parts as **`lecture_transcript_part*.txt`** in the repo root.
+
 ## Environment
 
 Copy **`.env.example`** to **`.env`** in the **repo root** (or create **`.env`** yourself; never commit it):

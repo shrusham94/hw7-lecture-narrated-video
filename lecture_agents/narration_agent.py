@@ -12,7 +12,8 @@ from lecture_agents.llm import generate_json, part_from_image_path
 
 BASE_SYSTEM = """You write spoken lecture narration for a slide deck video.
 Match the instructor's speaking style using style.json (tone, fillers guidance, pacing).
-Must stay aligned with premise.json + arc.json + this slide's description.
+You are given the full slide_description.json for the whole deck, plus premise.json and arc.json;
+stay aligned with those and write narration only for the requested slide_index.
 Do not claim to see live chat. Keep each narration tight for TTS (no stage directions).
 
 Output JSON: {"slide_index": <int>, "narration": <string>}"""
@@ -30,7 +31,8 @@ def run_narration_agent(
     style_txt = style_path.read_text(encoding="utf-8")
     premise_txt = premise_path.read_text(encoding="utf-8")
     arc_txt = arc_path.read_text(encoding="utf-8")
-    slide_doc = json.loads(slide_description_path.read_text(encoding="utf-8"))
+    slide_desc_raw = slide_description_path.read_text(encoding="utf-8")
+    slide_doc = json.loads(slide_desc_raw)
 
     slides_in = slide_doc.get("slides") or []
     by_idx = {int(s["slide_index"]): s for s in slides_in if "slide_index" in s}
@@ -68,9 +70,11 @@ def run_narration_agent(
             f"{premise_txt}\n\n"
             "arc.json:\n"
             f"{arc_txt}\n\n"
-            "slide_description.json excerpt for this slide only is in context_pack below.\n"
+            "slide_description.json (entire document, all slides):\n"
+            f"{slide_desc_raw}\n\n"
+            "Current slide focus (same data as in the document; repeated for clarity):\n"
             f"{context_pack}\n\n"
-            "All prior slide narrations (to avoid repetition):\n"
+            "All prior slide narrations for this run (none before slide 1):\n"
             f"{prior_blob}\n\n"
             f"Now write narration for slide_index={idx} only."
         )
