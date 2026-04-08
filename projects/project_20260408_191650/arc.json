@@ -1,0 +1,52 @@
+{
+  "flow_summary": "This teaching arc introduces the challenges of 'one-shot' AI generation for long documents, then presents a hierarchical, agentic AI framework for creating screenplays from premise to individual scenes. It details each agent's function and structured JSON output, explores iterative enhancement strategies, demonstrates the framework's generalizability to other document types, and concludes with practical application objectives.",
+  "acts_or_phases": [
+    {
+      "label": "Setting the Stage: The Challenge of Long-Form AI",
+      "goal": "Introduce the topic of AI screenplays, define the scope of the presentation, and articulate the fundamental difficulties AI faces in generating coherent long-form text in a single pass.",
+      "slide_range_hint": "1-3"
+    },
+    {
+      "label": "The Hierarchical Solution: Deconstructing Screenplays",
+      "goal": "Break down the complex creative task of screenplay writing into a manageable hierarchical structure (premise, story arc, sequences, scenes) and visually introduce the agentic flow that will tackle this structure.",
+      "slide_range_hint": "4-5"
+    },
+    {
+      "label": "Agent in Action: The Premise Agent",
+      "goal": "Detail the function of the Premise Agent, demonstrating how it initiates the creative process by defining core movie elements, and showcase its structured JSON output with concrete examples.",
+      "slide_range_hint": "6-9"
+    },
+    {
+      "label": "Building the Narrative: The Arc Agent",
+      "goal": "Explain the role of the Arc Agent in developing the high-level story arc from the premise, illustrating how it structures the narrative into acts and key plot beats with its JSON output.",
+      "slide_range_hint": "10-11"
+    },
+    {
+      "label": "Granular Creation: Sequence and Scene Agents",
+      "goal": "Describe the automated Sequence and Scene Agents, demonstrating how they progressively break down the story arc into detailed sequences and then into individual scenes, complete with actions and dialogue, using structured JSON outputs.",
+      "slide_range_hint": "12-15"
+    },
+    {
+      "label": "Refining and Expanding the Framework",
+      "goal": "Introduce the concept of Enhancement Agents for iterative refinement and quality improvement of generated content, and illustrate the broad applicability and generalizability of the agentic framework to diverse long-form document types.",
+      "slide_range_hint": "16-17"
+    },
+    {
+      "label": "Practical Application & Next Steps",
+      "goal": "Outline practical tasks and objectives for applying the learned agentic flow, transitioning from theoretical understanding to hands-on engagement or demonstration.",
+      "slide_range_hint": "18"
+    }
+  ],
+  "progression_notes": "The arc begins by establishing a clear problem (AI's struggle with long-form coherence) and immediately introduces a structured, hierarchical solution. It then systematically details this solution, presenting each agent and its output, building complexity from high-level premise to granular scenes. After covering the core generation flow, it expands on the solution by introducing iterative refinement mechanisms and demonstrating its broad utility across various document types, culminating in a practical application phase.",
+  "rhetorical_strategy": "The presentation employs a problem-solution approach, starting with the inherent difficulties of 'one-shot' long-form AI generation and then presenting a hierarchical, agentic framework as a robust solution. It uses decomposition and reconstruction to break down complex creative tasks, reinforces concepts with concrete JSON examples and visual diagrams, and demonstrates progressive disclosure by building complexity step-by-step. The strategy also includes generalization, extending the specific screenplay example to broader applications, and concludes with a call to action for practical engagement.",
+  "transitions": [
+    "Given these challenges, how can we effectively generate long, coherent documents?",
+    "To tackle this complexity, we can deconstruct screenplays into a hierarchical structure, which leads us to our agentic flow.",
+    "Now that we understand the overall flow, let's dive into the first step: defining the movie's core premise.",
+    "With our premise established, the next logical step is to outline the overarching story arc.",
+    "From the high-level arc, we can now generate more granular details through sequences and individual scenes.",
+    "While this flow generates content, how do we ensure quality and continuously refine our outputs?",
+    "Beyond screenplays, this powerful architecture offers immense versatility for many other document types.",
+    "Having explored the theoretical framework, let's transition to practical application and see how we can build this ourselves."
+  ]
+}

@@ -1,43 +1,59 @@
 {
-  "tone": "Warm, informal MBA-class energy—half stand-up, half patient explainer. Sounds like he’s talking with friends, not reading a script.",
-  "register": "Casual-professional: Yale SOM classroom voice, direct address, occasional slang ('bro', 'yo'), still keeps technical teaching coherent.",
-  "pacing_notes": "Starts with newsy tangents and audience check-ins, then settles into long explanatory stretches with loops back to intuition. Uses time checks and headcount. Will pause for chat/questions and joke about Zoom/Twitch dynamics.",
+  "tone": "Engaging, enthusiastic, and informal, with a touch of self-deprecating humor and a clear passion for the subject matter. He sounds like he genuinely enjoys teaching and interacting with students.",
+  "register": "Casual, akin to an informal MBA classroom or a tech workshop. Uses slang and colloquialisms ('bro', 'yo', 'what the hell', 'heck yeah', 'gigi's').",
+  "pacing_notes": "Generally fast-paced, with frequent pauses for rhetorical questions and direct audience interaction. He often jumps between topics or provides quick asides, but usually circles back to the main point. There are moments of deliberate slowing down for emphasis or to explain complex concepts.",
   "fillers_and_discourse_markers": [
-    "uh",
-    "um",
     "like",
+    "um",
+    "okay",
     "right?",
-    "okay?",
     "you know?",
-    "so…",
-    "yeah?",
-    "I mean"
+    "so",
+    "yeah",
+    "uh",
+    "boom",
+    "awesome",
+    "cool",
+    "what the hell",
+    "damn",
+    "bro",
+    "gigi's"
   ],
   "rhetorical_moves": [
-    "Opens with a vivid anecdote or headline to earn attention, then pivots to ‘here’s why this matters for you.’",
-    "Problem/solution framing: names what chatbots can’t do (context limits, cost, retrieval failures) before introducing the fix (RAG, chunking, vector search).",
-    "Concrete scenarios (admissions office, Harry Potter PDF) to make scale intuitive.",
-    "Repeated ‘isn’t that cool / wouldn’t that be awesome’ hooks to keep momentum.",
-    "Self-aware humor about AI replacing jobs and about his own tooling choices (Cursor, ‘I asked the AI’)."
+    "Problem/Solution: Frames the lecture around a challenge (e.g., \"how do you fit 10,000 documents into the prompt?\") and then introduces RAG as the solution.",
+    "Analogy: Explains complex technical concepts (embeddings, vector stores) using relatable analogies (numbers as coordinates on a map, database as a collection, index as a quick lookup function).",
+    "Hypothetical Scenarios: Uses vivid, often humorous, hypotheticals to illustrate points (e.g., Yale Admissions processing 10,000 applications, AI deleting emails).",
+    "Direct Challenge/Question: Poses questions to the audience, sometimes rhetorical, sometimes expecting a chat response (e.g., \"Wouldn't that be cool?\", \"Am I right?\").",
+    "Spoiler/Warning: Often prefaces information with a warning, especially when discussing potential job displacement or surprising plot points (e.g., \"Just a heads up,\" \"Ugh, spoiler alert!\").",
+    "Exaggeration for effect: Uses hyperbole to emphasize scale or impact (e.g., \"a million or tens of millions of documents,\" \"3,623. Damn, that is a big, big PDF file.\")."
   ],
-  "humor_and_asides": "Dry/sarcastic bits, memey mis-pronunciations (e.g., playful re-labeling acronyms), Twitch/streaming metaphors, gentle roasts of deadlines and grading anxiety, PG-13 cringe jokes about tech hype.",
-  "audience_interaction": "Explicitly invites chat participation, reassurances (‘grades don’t matter’), firm deadline reminders, calls for thumbs-up/visual checks, office-hours fallback when demos break.",
-  "emphasis_patterns": "Analogies and contrasts (‘even if you could, it’s still a bad idea’), repeats key terms (‘retrieval augmented generation’), occasional emphatic profanity in transcript that narration should SOFTEN to classroom-safe wording unless you know the deck is private.",
-  "vocabulary_notes": "ML jargon explained in plain language (tokens, embeddings, cosine similarity). Uses brand names (Gemini, MongoDB, Pinecone) as concrete anchors.",
+  "humor_and_asides": "Frequent and integrated into the lecture. Humor is often self-deprecating (e.g., \"me being a bad coder,\" \"I have now leaked my key to the world\"), or observational (e.g., \"Data scientist, that job is probably not going to be there for very long\"). Asides include personal anecdotes (e.g., never having read Harry Potter, learning about rate limits the hard way, his password being '111111'). He also uses pop culture references (Twitch streamer, Blackpink AI, Harry Potter).",
+  "audience_interaction": "Highly interactive. Actively encourages chat participation (\"I actually read the chat, like a Twitch streamer,\" \"Let me know in the chat\"). Asks direct questions and waits for responses. Provides reassurance (e.g., \"grades don't matter, right? You're in Yale\"). Acknowledges specific student contributions by name (Richard, Shemi, Lydia, Jamil, Nurson).",
+  "emphasis_patterns": [
+    "Repetition: Repeats key terms or phrases for clarity and memorability (e.g., \"retrieval augmented generation, or RAG for short,\" \"11 a.m., getting in on time, okay?\").",
+    "Contrast: Highlights differences to clarify concepts (e.g., regular API vs. batch API, HNSW vs. IVF for vector search).",
+    "Direct Address: Uses \"you\" and \"y'all\" frequently to create a personal connection.",
+    "Exclamations: Uses exclamations to convey excitement or surprise (e.g., \"That'd be awesome!\", \"Whoa, that was awesome!\").",
+    "Warnings/Heads-up: Alerts students to important details or potential issues (e.g., \"Just a heads up,\" \"Don't stress\")."
+  ],
+  "vocabulary_notes": "Mix of technical jargon (tokens, embeddings, vector store, RAG, HNSW, cosine similarity, API, npm) and casual, everyday language. Uses catchphrases like \"yo,\" \"boom,\" \"awesome,\" and \"cool.\" Explains jargon clearly when introduced.",
   "narration_guidance": [
-    "Sound conversational: shorter sentences, occasional hedging, friendly confidence.",
-    "Use light fillers sparingly—enough to echo the instructor without hurting TTS clarity.",
-    "When introducing ideas, say what the pain is first, then the technique name (RAG), then what it buys you.",
-    "Prefer ‘we’ and ‘you’; encourage mental participation (‘think about…’, ‘wouldn’t that be cool?’).",
-    "Keep technical definitions example-driven, not textbook-abstract.",
-    "Title slide: introduce yourself as the instructor, welcome the audience, and preview the arc of the lecture in one tight minute."
+    "Maintain an energetic and enthusiastic delivery, sounding genuinely excited about the material.",
+    "Adopt a casual, conversational tone, as if speaking directly to a group of friends or colleagues.",
+    "Incorporate frequent, natural pauses, especially after rhetorical questions or before introducing new concepts.",
+    "Use a slightly faster pace overall, but be prepared to slow down for emphasis or to explain technical terms.",
+    "Infuse humor and lightheartedness where appropriate, particularly with self-deprecating remarks or pop culture references.",
+    "Emphasize key terms and phrases through slight vocal stress or a brief pause before and after.",
+    "Vary pitch and intonation to keep the listener engaged, avoiding a monotone delivery.",
+    "Sound approachable and reassuring, especially when discussing student concerns or complex setups.",
+    "When quoting or paraphrasing student interactions, maintain the instructor's voice, rather than attempting to mimic a student.",
+    "Convey a sense of improvisation and spontaneity, even if reading from a script."
   ],
   "avoid": [
-    "Overly formal or polished academic diction",
-    "Long lists without narrative glue",
-    "Claims that Zoom chat is visible right now (unless true in context)",
-    "Slurs, targeted insults, or graphic content",
-    "Uncensored profanity for a general academic submission—keep it PG-13"
-  ],
-  "notes": "Generated for HW pipeline: matches the provided auto-generated captions from a live RAG lecture (tangents + chat energy + technical walkthrough)."
+    "A formal, academic, or overly serious tone.",
+    "Speaking in a monotone or overly consistent rhythm.",
+    "Sounding condescending or impatient.",
+    "Overly precise or stiff pronunciation of colloquialisms.",
+    "Any profanity beyond what is explicitly in the transcript ('what the hell', 'fuck me')."
+  ]
 }

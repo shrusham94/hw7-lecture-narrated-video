@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "slide_count": 18,
+  "slides": [
+    {
+      "slide_index": 1,
+      "image": "slide_001.png",
+      "title_guess": "AI Screenplays",
+      "description": "The slide features the title 'AI Screenplays' in large blue text above a detailed cartoon illustration. The illustration depicts an office scene, likely from South Park, with a man in a suit (Randy Marsh) standing in the center. Behind him is a large window overlooking the Hollywood sign. On a desk to his left are several awards, including Oscars and an Emmy, and a Cartman-themed award. To his right, on a cabinet, are a globe, a fish tank with an alien, and a safe. In the foreground, on a table, are a script titled 'AWESOM-O' (upside down), a phone, a framed family photo, and a cardboard robot costume labeled 'A.W.E.S.O.M.-O'. A framed picture on the wall to the right reads 'AWESOME-O LAME'. This slide serves as an introductory title slide, setting a humorous tone for the topic of AI screenplays.",
+      "key_points": [
+        "Title: AI Screenplays.",
+        "Humorous cartoon illustration referencing the South Park 'AWESOM-O' episode.",
+        "Visual elements connect to Hollywood, screenwriting, and AI (via the robot character).",
+        "Introduces the presentation topic with a lighthearted, pop-culture reference."
+      ],
+      "narration": "Alright, yo, what's up everyone! I'm your instructor for today, and man, am I stoked to talk about AI Screenplays. You see this awesome slide here? Yeah, that's AWESOM-O, right? From South Park. And, uh, you know, it's pretty fitting 'cause when you think about AI trying to write a whole movie, sometimes it feels a little... AWESOM-O LAME, you know? Like, it can do little bits, but a whole coherent story? That's a challenge, bro. So, today, we're gonna dive deep into how we can actually get AI to write, like, full-blown screenplays, from premise to every single scene, without it getting, like, totally lost in the middle. It's gonna be awesome, okay? Let's get into it!"
+    },
+    {
+      "slide_index": 2,
+      "image": "slide_002.png",
+      "title_guess": "Generating Long Documents",
+      "description": "The slide is titled \"Generating Long Documents\" in large blue text. Below the title are four black bullet points on a light gray background. The first bullet states that AI can generate long, coherent text documents. The second bullet provides examples: books, reports, and screenplays. The third bullet specifies the presentation's focus: building an agentic flow to generate screenplays for movies. The final bullet notes that this flow architecture can be generalized to other long text documents. This slide transitions from the introductory title to define the scope and objectives of the presentation.",
+      "key_points": [
+        "Title: Generating Long Documents.",
+        "AI can generate long, coherent text documents.",
+        "Examples include books, reports, and screenplays.",
+        "The presentation will focus on building an agentic flow for movie screenplays.",
+        "The architecture is generalizable to other long text documents."
+      ],
+      "narration": "So, uh, expanding on that, right? We're talking about 'Generating Long Documents' here. And, like, AI totally *can* be used to generate long, coherent text documents. We're talking about stuff like books, reports, screenplays, you know? The whole nine yards. But, for *this* session, today, we're gonna focus on building an agentic flow specifically to generate screenplays for movies. Why screenplays? Well, they're complex, they're structured, and frankly, they're just kinda cool, right? But the awesome thing, the really cool part, is that this exact flow architecture, what we're gonna build, can totally be generalized to other long text documents. So you learn it once, and boom, you can apply it anywhere. Pretty neat, huh?"
+    },
+    {
+      "slide_index": 3,
+      "image": "slide_003.png",
+      "title_guess": "Challenge: \"One-Shot\" Long-Form",
+      "description": "The slide is titled \"Challenge: 'One-Shot' Long-Form\" in large blue text. It presents two main bullet points outlining difficulties in AI generating long, coherent documents. The first bullet states that it's hard for AI to generate a long, coherent document in one-shot. The second bullet elaborates on the 'local vs global' problem, explaining that AI is good at writing small parts but struggles to maintain coherence across an entire document. This leads to the AI becoming \"lost in the middle\" and experiencing \"context drift,\" causing it to hallucinate or lose focus deep into the document. This slide introduces the core challenges that the presentation's proposed solutions (like the agentic flow mentioned in the previous slide) aim to address.",
+      "key_points": [
+        "Title: Challenge: 'One-Shot' Long-Form.",
+        "AI struggles to generate long, coherent documents in a single attempt.",
+        "AI is good at local text generation but fails to maintain global coherence.",
+        "Problems include AI getting 'lost in the middle' and 'context drift' leading to hallucination or loss of focus."
+      ],
+      "narration": "So, uh, now we're talking about the *challenge*, right? 'One-Shot' Long-Form. And, like, this is the big hurdle, you know? It's really, really difficult for an AI to just, boom, generate a super long, coherent document in one shot. Why? Well, it's this whole 'local vs global' thing. The AI, it's actually pretty darn good at writing small parts, like a paragraph or a sentence, but it just cannot, for the life of it, maintain coherence across a *whole* document. It gets, like, totally 'lost in the middle.' You know? And then you get this 'context drift' where, deep into the document, the AI just starts to, uh, hallucinate or completely lose focus of what the hell it's supposed to be writing about. So, yeah, that's the problem we're trying to solve here."
+    },
+    {
+      "slide_index": 4,
+      "image": "slide_004.png",
+      "title_guess": "Movie Screenplays",
+      "description": "The slide is titled \"Movie Screenplays\" and outlines the intricate components an AI needs to understand and generate. It lists various elements screenplays possess, such as story shape, the goals of sequences within the movie, and specific scene action and dialogue. The slide then details the hierarchical structure of a screenplay, moving from the overarching premise (basic elements) to the story arc (high-level plot structure), then to sequences (more detailed plot), and finally to individual scenes (even more detailed plot). This slide provides a foundational understanding of screenplay complexity, setting the stage for how an AI system might be designed to tackle these elements, following the discussion of long-form generation challenges.",
+      "key_points": [
+        "Title: Movie Screenplays.",
+        "Screenplays contain many elements an AI must capture: story shape, sequence goals, and scene action/dialogue.",
+        "Screenplays have a hierarchical structure: premise, story arc, sequences, and scenes.",
+        "This hierarchy progresses from basic movie elements to increasingly detailed plot points."
+      ],
+      "narration": "Okay, so, uh, we just talked about the *challenge*, right? That whole 'one-shot' long-form thing where AI gets totally lost in the middle. So, how the hell do we solve that? Well, we gotta break it down, bro. And when we're talking about 'Movie Screenplays,' man, these things have *so* many different elements an AI needs to capture. Like, you've got the overall 'story shape,' you know? Then you've got the 'goals of each sequence' in the movie, and then, like, the super granular 'scene action and dialogue.' That's a *lot* for an AI to keep in its head all at once, right?\n\nSo, the solution, the way we tackle this complexity, is through a 'hierarchical structure' of a screenplay. We start big, with the 'Premise' – those are the basic elements of the movie, the core idea. Then, we build out the 'Story arc,' which is your high-level plot structure, like, the three acts. After that, we break it down further into 'Sequences,' which are more detailed plot chunks. And finally, *boom*, we get to the 'Scenes,' which is, like, the even more detailed plot, the actual action and dialogue. See? We're taking this massive, complex thing and breaking it down into manageable, structured pieces. That's the secret sauce, right there."
+    },
+    {
+      "slide_index": 5,
+      "image": "slide_005.png",
+      "title_guess": "Screenplay Flow",
+      "description": "The slide is titled \"Screenplay Flow\" and visually represents the hierarchical structure of a screenplay as a flow diagram. It features four colored rectangular boxes, each labeled with a screenplay component and a corresponding '.json' file name, suggesting a data-driven approach. The flow starts with a blue box labeled 'Premise' (premise.json), which points to a purple box labeled 'Arc' (arc.json). From 'Arc', arrows lead to two subsequent components: an orange box labeled 'Sequences' (sequence.json) and a green box labeled 'Scenes' (scenes.json). An additional arrow connects 'Sequences' to 'Scenes', indicating that sequences also feed into scenes. Each box also contains a small icon resembling a brown file or character. This slide visually reinforces the screenplay hierarchy discussed previously and introduces the concept of these components as structured data files.",
+      "key_points": [
+        "Title: Screenplay Flow.",
+        "Visualizes the hierarchical flow of screenplay components: Premise -> Arc -> Sequences -> Scenes.",
+        "Each component (Premise, Arc, Sequences, Scenes) is represented as a colored box with a corresponding '.json' file name.",
+        "Arrows indicate the flow and dependencies between components.",
+        "Reinforces the structural breakdown of a screenplay, hinting at a programmatic implementation."
+      ],
+      "narration": "Okay, so, uh, we just talked about breaking down that whole complex screenplay thing into manageable pieces, right? And *boom*, this slide, 'Screenplay Flow,' this is like, the visual representation of that hierarchical structure we're gonna build with our agents. So, check it out: it all starts with the 'Premise,' which, you know, we're gonna store in something like a `premise.json` file. That's your core idea, your characters, your conflict. Then, from the Premise, we build out the 'Arc,' which goes into `arc.json` – that's your high-level story structure, your acts, your major plot points. And then, from the Arc, we actually branch out, right? We go into 'Sequences,' which are gonna be in `sequence.json`, and also directly into 'Scenes,' in `scenes.json`. You'll also notice the Sequences feed into Scenes, 'cause, like, a sequence is just a collection of scenes, you know? The key thing here, bro, is that *everything* is a `.json` file. This is all about structured data. This is our agentic flow, taking that big, complex idea and turning it into these neat, programmatic steps. Pretty cool, huh?"
+    },
+    {
+      "slide_index": 6,
+      "image": "slide_006.png",
+      "title_guess": "Premise Agent",
+      "description": "The slide is titled \"Premise Agent\" in large blue text, with a small image of the 'AWESOM-O' robot from South Park in the top right corner. Below the title, four black bullet points describe the function and output of the Premise Agent. The first bullet explains it's a chat agent that discusses what a movie is about, including its title, logline (like an executive summary), characters, genre, and central conflict. The second bullet states that users can ask the agent for plot ideas if they are stuck. The third bullet notes that this chat can take a few minutes, even with a general sense of the movie, to specify all major elements. The final bullet indicates that the agent then creates a file named 'premise.json'. This slide details the first step in the 'Screenplay Flow' previously introduced, focusing on the initial interaction and data generation for the movie's premise.",
+      "key_points": [
+        "Title: Premise Agent.",
+        "Describes a chat agent that helps define a movie's core elements: title, logline, characters, genre, central conflict.",
+        "The agent can provide plot ideas when the user is stuck.",
+        "The chat process takes time to specify all major movie elements.",
+        "The agent outputs a 'premise.json' file, aligning with the 'Screenplay Flow' diagram."
+      ],
+      "narration": "Okay, so, uh, we just saw the 'Screenplay Flow' diagram, right? And the very first step in that flow, the absolute foundation, is our 'Premise Agent.' And, boom, check it out, it's got AWESOM-O there, 'cause this is where the magic starts! So, what is this thing? Well, it's a chat agent, right? Like, you're just gonna talk to it, and it's gonna help you figure out what your whole movie is about. We're talking title, the logline – which is, like, your executive summary for the movie, super important – your characters, the genre, and, of course, the central conflict. You know, all the good stuff.\n\nAnd, uh, if you're stuck, which, let's be real, we all get stuck sometimes, you can totally ask the agent to give you ideas for the plot. It's like having a brainstorming partner, awesome! Now, just a heads up, this chat, it can take a few minutes. Even if you have a general sense of your movie, it takes time to, like, really nail down and specify all those major elements. But the cool part? Once you're done, this agent, it just creates a file called `premise.json`. That's that structured data we talked about, right? The very first piece of our screenplay puzzle. Pretty neat, huh?"
+    },
+    {
+      "slide_index": 7,
+      "image": "slide_007.png",
+      "title_guess": "Premise.json",
+      "description": "The slide is titled \"Premise.json\" in large blue text, directly showcasing the output file from the 'Premise Agent' discussed in the previous slide. The main content is a large block of JSON code on a dark background, representing a movie premise. Key fields in the JSON include a `project_id`, `title` (\"Shadow of the Dark World\"), `writers` (TBD), `format_notes` indicating it was \"Awesome-O generated,\" a detailed `logline` (describing a quest involving Link, Princess Zelda, Master Sword, and Ganon), `genre` (fantasy, action, adventure), and `themes` (hero's journey, destiny, courage, good versus evil, sacrifice). This slide provides a concrete example of the structured data generated by the Premise Agent, illustrating the initial foundational elements for a screenplay.",
+      "key_points": [
+        "Title: Premise.json.",
+        "Displays an example of the `premise.json` file output by the Premise Agent.",
+        "JSON content includes `project_id`, `title`, `writers`, `format_notes`, `logline`, `genre`, and `themes`.",
+        "The `logline` describes a plot reminiscent of 'The Legend of Zelda'.",
+        "Demonstrates the structured data output for a movie's foundational premise."
+      ],
+      "narration": "Alright, so, uh, we just talked about the 'Premise Agent' creating that `premise.json` file, right? And *boom*, check it out, this is what it actually looks like! This is the structured data output from our Premise Agent. You can see, uh, you know, it's got a `project_id`, a `title` here, 'Shadow of the Dark World.' And look at the `format_notes` there, it literally says 'Awesome-O generated this from a CLI chat.' How cool is that, right?\n\nThen, uh, you've got the `logline`, which is, like, that super important executive summary. And, yeah, you might notice a few familiar names in there, like, uh, 'Link' and 'Princess Zelda' and, uh, 'Ganon.' Yeah, we totally went full Legend of Zelda for this example, 'cause why the hell not? It's awesome! And then, like, you've got your `genre` — fantasy, action, adventure — and your `themes`, you know, 'hero's journey,' 'destiny,' 'good versus evil,' 'sacrifice.' So, yeah, this is that foundational data, all structured, ready for the next agent to pick up. Pretty neat, huh?"
+    },
+    {
+      "slide_index": 8,
+      "image": "slide_008.png",
+      "title_guess": "Premise.json",
+      "description": "The slide is titled \"Premise.json\" and continues to display the JSON output from the Premise Agent, building upon the example shown in the previous slide. This section of the JSON provides more detailed elements of the movie's premise. It includes a `central_conflict` describing Link's quest to stop Aghanim and Ganon from sacrificing Princess Zelda and unleashing the Dark World. The `setting` object specifies the `primary_time` as a \"High fantasy era, contemporary-feel for characters\" and lists `primary_places` such as \"Hyrule Castle,\" \"Kakariko Village,\" \"Eastern Palace,\" \"Lost Woods,\" and \"Dark World.\" Finally, the `protagonists` array details \"Link,\" describing his `role` as an \"Unassuming hero, destined to wield the Master Sword\" and his `want` to \"save his uncle, rescue Zelda, and ultimately prevent Aghanim and Ganon from destroying Hyrule.\" This slide further elaborates on the structured data generated for the foundational elements of a screenplay, specifically focusing on the conflict, setting, and main character.",
+      "key_points": [
+        "Title: Premise.json.",
+        "Continues the display of the `premise.json` file, detailing more aspects of the movie's premise.",
+        "Includes a `central_conflict` outlining Link's mission against Aghanim and Ganon.",
+        "Defines the `setting` with a 'High fantasy era' and specific locations like 'Hyrule Castle' and 'Dark World'.",
+        "Describes the `protagonists`, specifically Link, his role, and his motivations.",
+        "Provides a comprehensive, structured overview of the core story elements for the 'Legend of Zelda'-inspired premise."
+      ],
+      "narration": "Okay, so, uh, continuing with our `premise.json` file, right? We're still fleshing out this awesome Legend of Zelda-inspired movie. And *boom*, look at this section! We've got the `central_conflict` all laid out. It's, like, Link's race against time to understand his role as a hero, stopping Aghanim from sacrificing Princess Zelda and six other maidens – what the hell, right? – and unleashing Ganon from the corrupted Dark World onto the Light World. Damn, that's some high stakes, bro!\n\nThen, uh, we define the `setting`. We've got `primary_time` as 'High fantasy era, contemporary-feel for characters' – which, you know, gives it that modern twist, pretty cool. And the `primary_places`? We're talking 'Hyrule Castle,' 'Kakariko Village,' 'Eastern Palace,' 'Lost Woods,' and, of course, the 'Dark World.' Awesome, right? All the classic spots. And finally, uh, we get into our `protagonists`. Right here, we've got 'Link' himself. His `role`? 'Unassuming hero, destined to wield the Master Sword.' And his `want`? 'To save his uncle, rescue Zelda, and ultimately prevent Aghanim and Ganon from destroying Hyrule.' See how detailed this JSON gets? It's, like, the blueprint for the entire story, already structured and ready to go. Pretty neat, huh?"
+    },
+    {
+      "slide_index": 9,
+      "image": "slide_009.png",
+      "title_guess": "Premise.json",
+      "description": "The slide is titled \"Premise.json\" and continues to display the JSON output from the Premise Agent, further elaborating on the movie's foundational elements. Building on the previous slide's introduction of Link as the protagonist, this slide fully reveals his `protagonists` entry, including his `name`, `role`, and `want`. It then introduces the `key_antagonist` as \"Aghanim,\" detailing his `role` as an \"Evil sorcerer, Ganon's pawn\" and his `want` to \"seal the seven maidens... to open a portal to the Dark World and release Ganon.\" Next, it defines a `key_ally`, \"Sahashrahla,\" with his `role` as a \"Village elder, wise man, guide\" and his `want` to \"guide Link to acquire the Master Sword.\" Finally, the `stakes` are clearly laid out as \"The total conquest of the Light World by the dark lord Ganon, resulting in the enslavement or destruction of its inhabitants.\" This slide completes the detailed character and conflict setup within the `premise.json` file, providing a comprehensive overview of the core story elements.",
+      "key_points": [
+        "Title: Premise.json.",
+        "Continues the display of the `premise.json` file, completing the protagonist's details.",
+        "Introduces and details the `key_antagonist`, Aghanim, including his role and motivations.",
+        "Introduces and details the `key_ally`, Sahashrahla, including his role and motivations.",
+        "Clearly defines the `stakes` of the story: the conquest and destruction of the Light World by Ganon.",
+        "Provides a complete, structured overview of the main characters, their goals, and the overarching conflict within the premise."
+      ],
+      "narration": "Okay, so, uh, continuing our deep dive into `premise.json`, right? We just talked about Link, our protagonist, and his role and what he wants. But *boom*, look at this! We're fully fleshing out the cast now. We've got our `key_antagonist` here, Aghanim, with his role as an 'Evil sorcerer, Ganon's pawn.' And his `want`? To 'seal the seven maidens, including Princess Zelda,' what the hell, right? All to 'open a portal to the Dark World and release Ganon.' Damn, that's some bad stuff.\n\nThen, uh, we've got our `key_ally`, Sahashrahla, the 'Village elder, wise man, guide.' And his `want` is, like, super crucial: 'To guide Link to acquire the Master Sword.' You know, every hero needs a wise mentor, right? And finally, the `stakes` are laid out, crystal clear: 'The total conquest of the Light World by the dark lord Ganon, resulting in the enslavement or destruction of its inhabitants.' So, yeah, this `premise.json` file, it's got all the core characters, their motivations, and the massive conflict, all structured and ready for the next agent. Pretty awesome, huh?"
+    },
+    {
+      "slide_index": 10,
+      "image": "slide_010.png",
+      "title_guess": "Arc Agent",
+      "description": "The slide is titled \"Arc Agent\" in large blue text, with the small 'AWESOM-O' robot image in the top right corner. It describes the functionality of the Arc Agent, which is the next step in the screenplay generation process after the Premise Agent. The first bullet point explains that it's a chat agent designed to discuss the movie's story arc, which consists of multiple acts, and that it takes `premise.json` as input for context. The second bullet details the user interaction: the user tells the agent what happens in each act, then asks it to draft each act sequentially. The third bullet reiterates that the premise file provides context for the story arc. Finally, the fourth bullet states that this agent creates an `arc.json` file. This slide introduces the second major component of the screenplay flow, explaining its purpose, interaction, and data input/output.",
+      "key_points": [
+        "Title: Arc Agent.",
+        "Introduces a chat agent for discussing and drafting the movie's story arc.",
+        "The story arc is composed of multiple acts.",
+        "The agent uses `premise.json` as input for context.",
+        "Users interact by detailing each act and then prompting the agent to draft them one at a time.",
+        "The agent's output is an `arc.json` file, continuing the structured data flow."
+      ],
+      "narration": "Okay, so, uh, we just finished up with our 'Premise Agent' and, like, all that awesome `premise.json` data, right? That's our foundation. Now, *boom*, we're moving onto the next big step in our screenplay flow: the 'Arc Agent.' And, yeah, AWESOM-O is still here, 'cause it's still awesome! So, this, uh, this is another chat agent, right? Just like the Premise Agent, you're gonna talk to it. But this time, it's all about discussing your movie's *story arc*. And, like, a story arc, you know, it consists of multiple acts, usually three, sometimes more, right?\n\nAnd the cool part? It takes that `premise.json` file we just made as input for context. So it knows all about Link, Zelda, Ganon, the whole shebang! Then, uh, you, the user, you tell the agent what happens in each act, you know, like, 'Act one, Link finds the Master Sword.' Then you ask it to draft that act, one at a time. This keeps everything super focused, preventing that 'context drift' we talked about earlier. And, yeah, you guessed it, this agent then creates a file called `arc.json`. It's all about that structured data, bro. Pretty neat, huh?"
+    },
+    {
+      "slide_index": 11,
+      "image": "slide_011.png",
+      "title_guess": "Arc.json",
+      "description": "The slide is titled \"Arc.json\" in large blue text, showcasing the output file from the 'Arc Agent' discussed in the previous slide. The main content is a large block of JSON code on a dark background, detailing the structure and content of a single act within a movie's story arc. Key fields include an `act` number (3), a `label` (\"Battle Aghanim and the Dark World\"), and an `approx_pages_note` indicating its length. It poses a `dramatic_question` and provides a comprehensive `summary` of the act's events, involving Link's quest to collect the Master Sword, rescue Zelda, confront Aghanim, and ultimately set the stage for Ganon. A `turning_point_end` is specified, and an array of `must_hit_beats` outlines specific plot points, such as Sahashrahla guiding Link, Link finding the Master Sword, Zelda's capture, Link confronting Aghanim, and Link landing in the Dark World. This slide provides a concrete example of the structured story arc data generated, illustrating the detailed plot points for a specific act.",
+      "key_points": [
+        "Title: Arc.json.",
+        "Displays an example of the `arc.json` file output by the Arc Agent.",
+        "JSON content details a specific act (Act 3) of the story arc.",
+        "Includes `label`, `approx_pages_note`, `dramatic_question`, and a detailed `summary` of the act's events.",
+        "Lists `must_hit_beats` as an array of specific plot points within the act.",
+        "Demonstrates the structured data output for a movie's story arc, continuing the 'Legend of Zelda'-inspired narrative."
+      ],
+      "narration": "Okay, so, uh, we just talked about the 'Arc Agent' and how it creates that `arc.json` file, right? That's, like, the high-level story structure. And *boom*, check it out, this is what it actually looks like! This is the structured data output from our Arc Agent.\n\nSo, uh, you can see here, we're looking at `act`: 3, right? And the `label` for this act is \"Battle Aghanim and the Dark World.\" And it even gives you an `approx_pages_note` – like, 20-30 pages of a 120-page screenplay, so, uh, it's a meaty act, you know? Then, you've got this awesome `dramatic_question`: \"Can Link defeat Aghanim, save Zelda and the other maidens, and prevent Ganon from conquering their world?\" Damn, that's a good question!\n\nAnd then, like, you've got this super detailed `summary` of the act, talking about Link collecting the Master Sword, rescuing Zelda, confronting Aghanim, and setting the stage for Ganon. It's, like, the whole shebang, right? And the `turning_point_end`? \"Aghanim banishes Link to the corrupted Dark World.\" Man, that's a cliffhanger!\n\nBut the really cool part, bro, is this `must_hit_beats` array. These are, like, the critical plot points that *have* to happen in this act. You've got Sahashrahla guiding Link, Link finding the Master Sword, Zelda getting captured, Link confronting Aghanim and deflecting fireballs, and then, *boom*, Link lands in the desolate, ominous Dark World. See how this `arc.json` really lays out the whole narrative, step by step, all structured? Pretty neat, huh?"
+    },
+    {
+      "slide_index": 12,
+      "image": "slide_012.png",
+      "title_guess": "Sequence Agent",
+      "description": "The slide is titled \"Sequence Agent\" in large blue text, featuring the small 'AWESOM-O' robot image in the top right corner. It describes the next agent in the screenplay generation process. The first bullet explains that this is an automated agent (unlike previous ones, it has no chat interface) that writes the sequences for each act of the movie. The 'Inputs per sequence' are detailed: `premise.json` and `arc.json` provide a global view of the movie, while all previously generated sequences give local context for what should happen next. The 'Primary sequence elements' that the agent considers are listed as: the 'Goal' (narrative purpose), 'Key locations' within the sequence, and the 'Exit beat' (how the sequence ends and transitions). Finally, the slide states that this agent creates a file named `sequence.json`. This slide introduces the next step in the screenplay flow, detailing how the system moves from the high-level story arc to generating individual sequences.",
+      "key_points": [
+        "Title: Sequence Agent.",
+        "Describes an automated agent (no chat) responsible for writing movie sequences for each act.",
+        "Inputs include `premise.json` and `arc.json` for global context, and prior sequences for local context.",
+        "Primary sequence elements considered are goal, key locations, and exit beat.",
+        "The agent outputs a `sequence.json` file, continuing the structured data generation."
+      ],
+      "narration": "Okay, so, uh, we just finished up with our 'Arc Agent' and, like, all that awesome `arc.json` data, right? That's our high-level story. Now, *boom*, we're diving even deeper into the granularity with the 'Sequence Agent.' And, yeah, AWESOM-O is still here, 'cause it's still awesome!\n\nSo, this is the next step in our screenplay flow. And unlike the Premise and Arc Agents, which were chat agents, this one, it's an *automated agent*, bro. No chat interface here, it just *goes*. It's responsible for writing the individual sequences for each act of the movie. Pretty cool, right?\n\nNow, for 'Inputs per sequence,' it needs context, right? So, it takes `premise.json` and `arc.json` – that gives it the *global view* of the whole movie. But then, it also takes *all previous sequences generated so far*. Why? 'Cause that gives it the *local context* for what should happen next. Super important for coherence, you know?\n\nAnd what are the 'Primary sequence elements' it considers? Well, there's the 'Goal' – what's the narrative purpose of this sequence? Then, 'Key locations' – where does this sequence take place? And finally, the 'Exit beat' – how does this sequence end and transition into the next one? All those details are crucial. And, yeah, you guessed it, this agent then creates a file named `sequence.json`. It's all about that structured, programmatic flow, baby! Pretty neat, huh?"
+    },
+    {
+      "slide_index": 13,
+      "image": "slide_013.png",
+      "title_guess": "Sequence.json",
+      "description": "The slide is titled \"Sequence.json\" in large blue text, showcasing the output file from the 'Sequence Agent' discussed in the previous slide. The main content is a large block of JSON code on a dark background, detailing the structure and content of a single sequence within a movie. Key fields include a `project_id`, `sequence_count` (8), and a `sequences` array containing a single sequence object. This sequence, identified by `id`: \"SEQ1\", has a `title`: \"Zelda's Urgent Plea\", and is part of `act`: 1. Its `goal` is \"To establish Link's call to adventure, his initial motivation (saving his uncle and Zelda), and to equip him with his first tools for the perilous journey ahead.\" The `emotional_tone` is described as \"Urgent, sorrowful, determined\". `key_locations` include \"Link's Home\" and \"Hyrule Castle (Outer Walls)\". Finally, the `exit_beat` states: \"Armed with his uncle's sword and shield, Link steels himself, ready to infiltrate the formidable Hyrule Castle and rescue Princess Zelda.\" This slide provides a concrete example of the structured sequence data generated, illustrating the detailed narrative elements for a specific sequence.",
+      "key_points": [
+        "Title: Sequence.json.",
+        "Displays an example of the `sequence.json` file output by the Sequence Agent.",
+        "JSON content details a specific sequence (SEQ1) within Act 1.",
+        "Includes `id`, `title`, `act`, `goal`, `emotional_tone`, `key_locations`, and `exit_beat`.",
+        "The sequence's goal is to establish Link's call to adventure and equip him.",
+        "The exit beat describes Link preparing to infiltrate Hyrule Castle to rescue Zelda.",
+        "Demonstrates the structured data output for a movie's sequence, continuing the 'Legend of Zelda'-inspired narrative."
+      ],
+      "narration": "Okay, so, uh, we just talked about the 'Sequence Agent' and how it's, like, this automated agent that generates sequences, right? And *boom*, check it out, this is what that `sequence.json` file actually looks like! This is the structured data output from our Sequence Agent.\n\nSo, uh, you can see here, we've got a `project_id`, and a `sequence_count` of eight, which means, like, this is one of eight sequences for the whole movie, right? And then, uh, we're looking at `id`: \"SEQ1\", so this is the very first one. The `title` is \"Zelda's Urgent Plea,\" and it's part of `act`: 1. Makes sense, right?\n\nNow, look at the `goal`: \"To establish Link's call to adventure, his initial motivation (saving his uncle and Zelda), and to equip him with his first tools for the perilous journey ahead.\" Damn, that's a lot packed into one sequence! And the `emotional_tone` is \"Urgent, sorrowful, determined.\" You can, like, totally feel the vibe, right? The `key_locations` are \"Link's Home\" and \"Hyrule Castle (Outer Walls).\" And then, the `exit_beat` is, like, super clear: \"Armed with his uncle's sword and shield, Link steels himself, ready to infiltrate the formidable Hyrule Castle and rescue Princess Zelda.\" So, yeah, this `sequence.json` really breaks down the narrative into these detailed, structured chunks. Pretty neat, huh?"
+    },
+    {
+      "slide_index": 14,
+      "image": "slide_014.png",
+      "title_guess": "Scene Agent",
+      "description": "The slide is titled \"Scene Agent\" in large blue text, with the small 'AWESOM-O' robot image in the top right corner. It describes the final agent in the screenplay generation process. The first bullet explains that this is an automated agent (no chat interface) that writes the individual scenes of the movie for each sequence. The 'Inputs per sequence' are detailed: `premise.json`, `arc.json`, and `sequence.json` give the agent a global view of the movie, while all scenes generated so far in the current sequence and the previous sequence provide local context for what should happen next. The 'Primary scene elements' that the agent considers are listed as: the 'Slug line' (location of the scene) and 'Blocks' (series of actions and dialogues in the scene). Finally, the slide states that this agent then creates a file named `scenes.json`. This slide introduces the last step in the screenplay flow, detailing how the system moves from sequences to generating individual scenes.",
+      "key_points": [
+        "Title: Scene Agent.",
+        "Describes an automated agent (no chat) responsible for writing individual scenes for each movie sequence.",
+        "Inputs include `premise.json`, `arc.json`, and `sequence.json` for global context.",
+        "Prior generated scenes (current and previous sequences) provide local context.",
+        "Primary scene elements considered are slug line (location) and blocks (actions and dialogues).",
+        "The agent outputs a `scenes.json` file, completing the structured data generation for the screenplay."
+      ],
+      "narration": "Okay, so, uh, we just talked about the 'Sequence Agent' and how it generates those detailed `sequence.json` files, right? That's, like, breaking down the acts into smaller chunks. Now, *boom*, we're at the very, very end of our core generation flow with the 'Scene Agent.' And, yeah, AWESOM-O is still here, 'cause it's the final piece of the puzzle!\n\nSo, this is the last step, bro. And, just like the Sequence Agent, it's an *automated agent*. No chat interface here, it just *goes*. It's responsible for writing the *individual scenes* for each sequence of the movie. Pretty cool, right?\n\nNow, for 'Inputs per sequence,' it needs *all* the context, right? So, it takes `premise.json`, `arc.json`, and `sequence.json` – that gives it the *global view* of the whole movie, from the big idea down to the current sequence's goal. But then, it also takes *all scenes generated so far in the current sequence and the previous sequence*. Why? 'Cause that gives it the *local context* for what the hell should happen next, maintaining that coherence we talked about.\n\nAnd what are the 'Primary scene elements' it considers? Well, there's the 'Slug line' – that's, like, the location of the scene, you know, 'INT. LINK'S HOME - NIGHT.' And then, the 'Blocks' – those are the actual series of actions and dialogues in the scene. That's the meat of it! And, yeah, you guessed it, this agent then creates a file named `scenes.json`. That's the actual screenplay content, all structured and ready. Pretty neat, huh?"
+    },
+    {
+      "slide_index": 15,
+      "image": "slide_015.png",
+      "title_guess": "Scenes.json",
+      "description": "The slide is titled \"Scenes.json\" in large blue text, showcasing the output file from the 'Scene Agent' discussed in the previous slide. The main content is a large block of JSON code on a dark background, detailing the structure and content of the initial scenes within a movie. It begins with a `scenes` array, containing the first scene object. This scene, identified by `id`: \"S0001\" and `slug_id`: \"SEQ1-01\", has a `slugline`: \"INT. LINK'S HOME - NIGHT\" and is part of `sequence_id`: \"SEQ1\". The scene is composed of an array of `blocks`, which include both `action` and `dialogue` elements. The `action` blocks describe Link sleeping, being woken by a desperate whisper, jolting awake, and clutching his head as visions flash. The `dialogue` block features Zelda's voice-over (V.O.) pleading for help, stating she's trapped in the castle by Aghanim. This slide provides a concrete example of the structured scene data generated, illustrating the detailed narrative elements for the opening of a sequence.",
+      "key_points": [
+        "Title: Scenes.json.",
+        "Displays an example of the `scenes.json` file output by the Scene Agent.",
+        "JSON content details the first scene (S0001) of sequence SEQ1-01.",
+        "Includes `id`, `slug_id`, `slugline`, and `sequence_id` for the scene.",
+        "The scene is composed of `action` and `dialogue` blocks.",
+        "The narrative describes Link waking to Zelda's telepathic plea for help from Aghanim.",
+        "Demonstrates the structured data output for a movie's individual scenes, completing the 'Legend of Zelda'-inspired screenplay generation."
+      ],
+      "narration": "Okay, so, uh, we just talked about the 'Scene Agent' and how it generates those individual scenes, right? That's, like, the super granular stuff. And *boom*, check it out, this is what that `scenes.json` file actually looks like! This is the structured data output from our Scene Agent, the final piece of the core generation puzzle.\n\nSo, uh, you can see here, we've got a `scenes` array, and this is our very first scene, `id`: \"S0001\", part of `sequence_id`: \"SEQ1\". And, uh, look at that `slugline`: \"INT. LINK'S HOME - NIGHT.\" You know, classic screenplay stuff, right? And then, like, you've got these `blocks`. These are, like, the actual actions and dialogue that make up the scene. We've got Link, you know, sleeping peacefully, and then, *boom*, a piercing, desperate whisper echoes in his mind. He jolts awake, eyes wide, disoriented. The whisper intensifies, forming words. And then, *bam*, we get the `dialogue` block: \"ZELDA (V.O.),\" right? \"Link... help me... I'm trapped in the castle... Aghanim... has me...\"\n\nMan, that's, like, the perfect opening for a Legend of Zelda movie, right? Link clutches his head, visions flash of Hyrule Castle, Zelda's terrified face, and the menacing silhouette of Aghanim. See how this `scenes.json` brings it all together, all structured, all ready for the big screen? Pretty neat, huh?"
+    },
+    {
+      "slide_index": 16,
+      "image": "slide_016.png",
+      "title_guess": "Enhancement Agents",
+      "description": "The slide is titled \"Enhancement Agents\" in large blue text. It introduces the concept of improving the agentic flow by using agents to enhance intermediate outputs. A main bullet point explains this, followed by three sub-bullets detailing specific areas for enhancement: writing better sequences or scenes, cleaning up the premise, and making the arc more creative. To the right, an image of a golden robot labeled \"ENHANCEMENT AGENT\" visually represents these agents. Below, a flow diagram, similar to the \"Screenplay Flow\" from slide 5, illustrates this enhancement process. It shows blue 'Premise' (premise.json), purple 'Arc' (arc.json), orange 'Sequences' (sequence.json), and green 'Scenes' (scenes.json) boxes, connected by arrows indicating the primary generation flow. Crucially, small robot icons with arrows now point *backwards* from 'Arc' to 'Premise', from 'Sequences' to 'Arc', and from 'Scenes' to both 'Arc' and 'Sequences', signifying iterative feedback and enhancement loops. This slide advances the deck by introducing a mechanism for refining the outputs of the previously described screenplay generation agents, moving from a linear process to an iterative, quality-focused one.",
+      "key_points": [
+        "Title: Enhancement Agents.",
+        "Introduces the concept of using agents to enhance intermediate outputs in the agentic flow.",
+        "Specific enhancement goals include improving sequences/scenes, cleaning the premise, and making the arc more creative.",
+        "A visual diagram shows the screenplay flow (Premise -> Arc -> Sequences -> Scenes) with added feedback loops (represented by robot icons and backward arrows) for enhancement.",
+        "The enhancement agents allow for iterative refinement of outputs like premise, arc, sequences, and scenes."
+      ],
+      "narration": "Okay, so, uh, we just went through the whole flow, right? We've got our Premise, our Arc, our Sequences, and our Scenes, all generated by our awesome agents. But, like, what if it's not perfect? What if, you know, the premise could be a little cleaner? Or the arc could be, like, way more creative? Or the sequences and scenes could just be *better*? Well, *boom*, that's where our 'Enhancement Agents' come in! Check out the title, right?\n\nSo, we can totally improve this whole agentic flow by using these agents to enhance those intermediate outputs. We're talking about writing better sequences or scenes, cleaning up the premise if it's a little messy, or even making the arc more creative, you know? Like, pushing the boundaries a bit. And look at the diagram here, bro! See those little robots with the *backward* arrows? That's the key! They're not just going forward anymore; they're, like, looking at the output and saying, 'Hmm, how can we make this even more awesome?' It's all about that iterative refinement, making sure every single piece of our screenplay is, like, top-notch. Pretty neat, huh? It's a game-changer for quality."
+    },
+    {
+      "slide_index": 17,
+      "image": "slide_017.png",
+      "title_guess": "Generalizing to Other Documents",
+      "description": "The slide is titled \"Generalizing to Other Documents\" in large blue text. A single black bullet point states: \"By modifying the agent prompts, this hierarchical flow can be used for other long text documents.\" Below this, a large table illustrates how the previously described agentic flow can be adapted for various document types. The table has six columns: 'Document', 'Premise', 'Arc', 'Sequence', 'Scene', and 'Artist Rendering'. Each row represents a different document type: 'Book', 'Podcast', 'Song', 'Lecture', and 'Business plan'. For each document, the table maps the corresponding hierarchical components (e.g., for a 'Book': 'Premise', 'Table of contents', 'Chapter', 'Sub-chapter') and includes a small, humorous 'Artist Rendering' image of a robot engaging with that document type (e.g., a robot reading a book, recording a podcast, DJing, teaching, or presenting a business plan). This slide advances the deck by demonstrating the versatility and generalizability of the agentic architecture beyond screenplays, fulfilling a promise made in earlier slides.",
+      "key_points": [
+        "Title: Generalizing to Other Documents.",
+        "The hierarchical agentic flow can be adapted for various long text documents by modifying agent prompts.",
+        "A table maps the structural components (Premise, Arc, Sequence, Scene) for different document types: Book, Podcast, Song, Lecture, and Business plan.",
+        "Each document type is accompanied by a humorous 'Artist Rendering' of a robot interacting with it.",
+        "Illustrates the broad applicability of the agentic generation framework."
+      ],
+      "narration": "Okay, so, uh, we just talked about 'Enhancement Agents,' right? Like, making our screenplay flow even *better*. But, *boom*, here's the really, really cool part, bro: 'Generalizing to Other Documents.' Remember how I said at the very beginning that this whole architecture, what we built for screenplays, could be applied to *anything*? Well, this is it! \n\nLike, by just modifying the agent prompts, this exact hierarchical flow can be used for, like, any other long text document you can think of. Check out this table, right? For a 'Book,' your premise is still your premise, but your arc becomes your 'Table of contents,' your sequence is a 'Chapter,' and your scene is a 'Sub-chapter.' Pretty neat, huh? Or, like, for a 'Lecture,' which is what we're doing right now, your premise is your 'Learning objective,' your arc is your 'Outline,' a sequence is a 'Module,' and a scene is, well, a 'Slide'! See? \n\nAnd, uh, look at those 'Artist Renderings' on the right, man, those robots are, like, totally getting into it! A robot reading a book, a robot DJing a song, a robot giving a lecture. It just shows you, this framework, it's super versatile, super powerful. You learn it once, and you can apply it to, like, a million different things. Pretty awesome, huh?"
+    },
+    {
+      "slide_index": 18,
+      "image": "slide_018.png",
+      "title_guess": "Coding Session",
+      "description": "The slide is titled \"Coding Session\" in large blue text. Below the title are three black bullet points outlining practical tasks: \"Write a short screenplay using Awesome-O,\" \"Add enhancement agents to the agentic flow,\" and \"Modify Awesome-O for different document types.\" Below the bullet points, a flow diagram visually represents the screenplay generation process. It features four colored rectangular boxes: a blue 'Premise' (premise.json), a purple 'Arc' (arc.json), an orange 'Sequences' (sequence.json), and a green 'Scenes' (scenes.json). Arrows indicate the flow: 'Premise' points to 'Arc', 'Arc' points to both 'Sequences' and 'Scenes', and 'Sequences' points to 'Scenes'. Crucially, a small 'AWESOM-O' robot icon is placed on each of these forward-pointing arrows, signifying the agents that facilitate the transition and generation at each step. This slide serves as an introduction to a practical demonstration or workshop, outlining the objectives for applying the previously discussed agentic flow.",
+      "key_points": [
+        "Title: Coding Session.",
+        "Three bullet points outline practical tasks: writing a screenplay, adding enhancement agents, and modifying the system for different document types.",
+        "A flow diagram illustrates the screenplay generation process: Premise -> Arc -> Sequences -> Scenes.",
+        "Robot icons are placed on the arrows in the diagram, representing the agents that drive each step of the generation flow.",
+        "This slide sets the stage for a hands-on or demonstration segment, applying the concepts of the agentic flow."
+      ],
+      "narration": "Okay, so, uh, we've gone through the whole shebang, right? From the Premise Agent, to the Arc, Sequences, Scenes, and even those awesome Enhancement Agents. Now, *boom*, it's time for the 'Coding Session'! This is where we actually get our hands dirty, bro.\n\nSo, uh, the first thing we're gonna do is 'Write a short screenplay using Awesome-O.' We're gonna take everything we just learned, that whole flow you see there – Premise, Arc, Sequences, Scenes, all powered by our little robot buddies – and actually generate something cool, you know? Like, a real, short screenplay. Pretty neat, huh?\n\nThen, uh, we're gonna 'Add enhancement agents to the agentic flow.' Remember how we talked about making things *better*? Going back and refining? Yeah, we're gonna implement that. We'll add those feedback loops to make sure our screenplay isn't just generated, but, like, *awesome*.\n\nAnd finally, bro, we're gonna 'Modify Awesome-O for different document types.' Remember that table? Books, lectures, songs? Yeah, we're gonna take this same architecture and, uh, change the prompts, change the structure a bit, and see how versatile this thing really is. It's gonna be, like, super cool to see it in action. So, yeah, let's dive in!"
+    }
+  ]
+}
